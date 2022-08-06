@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Екатерина Картасова](https://up.htmlacademy.ru/adaptive/26/user/1938591).
-* Наставник: [Виктория Куликова](https://htmlacademy.ru/profile/id293745)
+* Наставник: [Виктория Куликова](https://htmlacademy.ru/profile/id293745).
 
 ---
 
