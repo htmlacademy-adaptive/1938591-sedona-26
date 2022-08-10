@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Седона</title>
+</head>
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo" href="index.html">
+      <img class="main-header__logo-image" src="../source/img/logo.svg" width="185" height="96" alt="Логотип сайта Седона">
+    </a>
+    <nav class="main-navigation">
+      <button class="main-navigation__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-navigation__wrapper">
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="index.html">
+              ГЛАВНАЯ
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">
+              ФОТО И ВИДЕО
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              ФОРМА ОТЗЫВА
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              HTML ACADEMY
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="form-container">
+    <header class="form__header">
+      <h1 class="visually-hiden">Седона</h1>
+      <img src="../source/img/SEDONA.svg" alt="" style="background-image: url('images/back-desktop.jpg');">
+    </header>
+    <section class="custom__reviews">
+      <h2 class="custom__reviews--title">Оставьте свой отзыв</h2>
+      <p class="custom__reviews--description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <form class="custom__form reviews__form" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="reviews-form__group">
+          <legend class="reviews-form__title">Представьтесь:</legend>
+          <ul class="control-container reviews-form__list">
+            <li class="reviews-form__item">
+              <label class="control__field">
+                <span class="field-label">ИМЯ*:</span>
+                <input class="field-label__input" type="text" name="reviews-form-recipient-firstname" placeholder="Пётр">
+              </label>
+            </li>
+            <li class="reviews-form__item">
+            <label class="control__field">
+              <span class="field-label">ФАМИЛИЯ*:</span>
+              <input class="field-label__input" type="text" name="reviews-form-recipient-lastname" placeholder="Пустота">
+            </label>
+            </li>
+            <li class="reviews-form__item">
+            <label class="control__field">
+              <span class="field-label">Отчество:</span>
+              <input class="field-label__input" type="text" name="reviews-form-recipient-name" placeholder="Викторович">
+            </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="reviews-form__group">
+          <legend class="reviews-form__title">Контактная информация:</legend>
+          <ul class="control-container form-list">
+            <li class="kontakt-form__item">
+            <label class="kontakt-form__field">
+              <span class="kontakt-form__field-label">Контактный телефон*:</span>
+              <input class="kontakt-form__field-control input" type="tel" name="kontakt-form-tel" placeholder="Введите телефон" required pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}">
+              <button class="kontakt-form__fieid-button" type="button">
+                <img src="../source/img/phone.svg" width="18" height="18" alt="">
+              </button>
+            </label>
+            </li>
+            <li class="kontakt-form__item">
+            <label class="kontakt-form__field">
+              <span class="kontakt-form__field-label">Электронная почта*:</span>
+              <input class="kontakt-form__field-control input" type="email" name="kontakt-form-email" placeholder="Введите e-mail" required>
+              <button class="kontakt-form__fieid-button" type="button">
+                <img src="../source/img/mail.svg" width="16" height="12" alt="">
+              </button>
+            </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="reviews-form__group">
+          <legend class="reviews-form__title">ВАше Общее впечатление:</legend>
+          <ul class="control-container form-list__radio">
+            <li class="reviews-form__item">
+              <label class="control radio">
+                <input class="visually-hidden control__input" type="radio" checked>
+                <span class="control-label">Скорее положительное</span>
+              </label>
+            </li>
+            <li class="reviews-form__item">
+              <label class="control radio">
+                <input class="visually-hidden control__input" type="radio">
+                <span class="control-label">Скорее отрицательное</span>
+              </label>
+            </li>
+            <li class="reviews-form__item">
+              <label class="control radio">
+                <input class="visually-hidden control__input" type="radio">
+                <span class="control-label">Затрудняюсь ответить</span>
+              </label>
+            </li>
+          </ul>
+          </legend>
+        </fieldset>
+        <fieldset class="reviews-form__group">
+          <legend class="reviews-form__title">посещенные достопримечательности:</legend>
+          <ul class="control-container form-list__checked">
+            <li class="reviews-form__item">
+              <label class="control checked">
+                <input class="visually-hidden control__input" type="checkbox" checked>
+                <span class="control-label">Мост Дьявола</span>
+              </label>
+            </li>
+            <li class="reviews-form__item">
+              <label class="control checked">
+                <input class="visually-hidden control__input" type="checkbox" checked>
+                <span class="control-label">Гора-Колокол</span>
+              </label>
+            </li>
+            <li class="reviews-form__item">
+              <label class="control checked">
+                <input class="visually-hidden control__input" type="checkbox" checked>
+                <span class="control-label">Слайд-парк</span>
+              </label>
+            </li>
+            <li class="reviews-form__item">
+              <label class="control checked">
+                <input class="visually-hidden control__input" type="checkbox">
+                <span class="control-label">Красные скалы</span>
+              </label>
+            </li>
+          </ul>
+          </legend>
+        </fieldset>
+        <fieldset class="reviews-form__group">
+          <label class="reviews-form__title" for="emotions">Опишите свои эмоции:</label>
+          <textarea class="reviews-form__area" id="emotions" name="emotions" rows="6" required>Опишите подробно все свои восторги</textarea>
+        </fieldset>
+        <button class="reviews-form__button" type="button">ОТПРАВИТЬ ОТЗЫВ</button>
+        <p button__text>* — обязательные поля</p>
+      </form>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <h2 class="main-footer__title">#visitSEDONA</h2>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <img class="social__link--vkontakte-image" src="../source/img/vk.svg" width="48" height="48" alt="">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <img class="social__link--youtube-image" src="../source/img/YouTube.svg" width="48" height="48" alt="">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <img class="social__link--telegram-image" src="../source/img/Telegram.svg" width="48" height="48" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <h2 class="copyright__text">Разработано</h2>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__image" src="../source/img/htmlacademy.svg" width="26.9" height="34.1" alt="">
+        </a>
+      </div>
+  </footer>
+</body>
+</html>
+
