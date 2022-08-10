@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Седона</title>
+  <base href="https://htmlacademy-adaptive.github.io/1938591-sedona-26/3/">
+</head>
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo" href="index.html">
+      <img class="main-header__logo-image" src="../source/img/logo.svg" width="185" height="96" alt="Логотип сайта Седона">
+    </a>
+    <nav class="main-navigation">
+      <button class="main-navigation__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-navigation__wrapper">
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item site-list__item">
+            <a href="index.html">
+              ГЛАВНАЯ
+            </a>
+          </li>
+          <li class="site-list__item--active">
+            <a href="catalog.html">
+              ФОТО И ВИДЕО
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              ФОРМА ОТЗЫВА
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              HTML ACADEMY
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="catalog-container">
+    <header class="catalog__header">
+      <h1 class="visually-hiden">Седона</h1>
+      <img src="../source/img/SEDONA.svg" alt="" style="background-image: url('../source/img/back-desktop.jpg');">
+    </header>
+    <section class="catalog__cards">
+      <h2 class="catalog__cards-title">Фото и видео</h2>
+      <p class="catalog__cards-description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <ul class="catalog__list">
+        <li class="catalog__item-card">
+          <img class="catalog__item-card--image" src="../source/img/photo-1-mobile.jpg" width="280" height="280" alt="Дорога на фоне рассвета. Машина, едущая в начале дороги, с включенными фарами">
+          <h3 class="title-card">Неродные просторы</h3>
+          <p class="card-text">Автор фото: Борис</p>
+          <button class="card__favorite" type="button">
+            <img src="../source/img/like-icon.svg" alt="">
+          1350</button>
+        </li>
+        <li class="catalog__item-card">
+          <img class="catalog__item-card--image" src="../source/img/photo-2-mobile.jpg" width="280" height="280" alt="Цветущий кактус желтыми цветами на фоне красных гор">
+          <h3 class="title-card">Местная растительность</h3>
+          <p class="card-text">Автор фото: Сергей</p>
+          <button class="card__favorite" type="button">
+            <img src="../source/img/like-icon.svg" alt="">
+          143</button>
+        </li>
+        <li class="catalog__item-card">
+          <img class="catalog__item-card--image" src="../source/img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога вдоль деретьев">
+          <h3 class="title-card">Дорога на север</h3>
+          <p class="card-text">Автор фото: Петр</p>
+          <button class="card__favorite" type="button">
+            <img src="../source/img/like-icon.svg" alt="">
+          96</button>
+        </li>
+        <li class="catalog__item-card">
+          <img class="catalog__item-card--image" src="../source/img/photo-4-desktop1.jpg" width="280" height="280" alt="Горы красного увета и деревья между ущельями">
+          <h3 class="title-card">Мост дьявола</h3>
+          <p class="card-text">Автор фото: Антон</p>
+          <button class="card__favorite" type="button">
+            <img src="../source/img/like-icon.svg" alt="">
+          254</button>
+        </li>
+      </ul>
+    </section>
+    <section class="catalog__video">
+      <h2 class="catalog__video-title">Все еще сомневаетесь?</h2>
+      <p class="catalog__video-description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      <video class="catalog__video-player" width="280" height="177" controls poster="../source/img/video-desktop1.jpg">
+        <source src="../source/img/video-desktop1.webm" type="video/webm">
+        <source src="../source/img/video-desktop1.ogv" type="video/ogg">
+        <source src="../source/img/video-desktop1.mp4" type="video/mp4">
+      </video>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <h2 class="main-footer__title">#visitSEDONA</h2>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <img class="social__link--vkontakte-image" src="../source/img/vk.svg" width="48" height="48" alt="">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <img class="social__link--youtube-image" src="../source/img/YouTube.svg" width="48" height="48" alt="">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <img class="social__link--telegram-image" src="../source/img/Telegram.svg" width="48" height="48" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <h2 class="copyright__text">Разработано</h2>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__image" src="../source/img/htmlacademy.svg" width="27" height="34" alt="">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
