@@ -16,7 +16,7 @@
       </button>
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list site-list">
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item">
             <a href="index.html">
               ГЛАВНАЯ
             </a>
@@ -26,7 +26,7 @@
               ФОТО И ВИДЕО
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a href="form.html">
               ФОРМА ОТЗЫВА
             </a>
@@ -45,28 +45,28 @@
       <h1 class="visually-hiden">Седона</h1>
       <img src="../source/img/SEDONA.svg" alt="" style="background-image: url('images/back-desktop.jpg');">
     </header>
-    <section class="custom__reviews">
-      <h2 class="custom__reviews--title">Оставьте свой отзыв</h2>
-      <p class="custom__reviews--description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-      <form class="custom__form reviews__form" action="https://echo.htmlacademy.ru/" method="get">
+    <section class="custom-reviews">
+      <h2 class="custom-reviews__title">Оставьте свой отзыв</h2>
+      <p class="custom-reviews__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <form class="custom-reviews__form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="reviews-form__group">
           <legend class="reviews-form__title">Представьтесь:</legend>
-          <ul class="control-container reviews-form__list">
+          <ul class="reviews-form__list">
             <li class="reviews-form__item">
-              <label class="control__field">
-                <span class="field-label">ИМЯ*:</span>
+              <label class="reviews-form__field">
+                <span class="field-label__span">ИМЯ*:</span>
                 <input class="field-label__input" type="text" name="reviews-form-recipient-firstname" placeholder="Пётр">
               </label>
             </li>
             <li class="reviews-form__item">
-            <label class="control__field">
-              <span class="field-label">ФАМИЛИЯ*:</span>
+            <label class="reviews-form__field">
+              <span class="field-label__span">ФАМИЛИЯ*:</span>
               <input class="field-label__input" type="text" name="reviews-form-recipient-lastname" placeholder="Пустота">
             </label>
             </li>
             <li class="reviews-form__item">
-            <label class="control__field">
-              <span class="field-label">Отчество:</span>
+            <label class="reviews-form__field">
+              <span class="field-label__span">Отчество:</span>
               <input class="field-label__input" type="text" name="reviews-form-recipient-name" placeholder="Викторович">
             </label>
             </li>
@@ -74,44 +74,44 @@
         </fieldset>
         <fieldset class="reviews-form__group">
           <legend class="reviews-form__title">Контактная информация:</legend>
-          <ul class="control-container form-list">
-            <li class="kontakt-form__item">
-            <label class="kontakt-form__field">
-              <span class="kontakt-form__field-label">Контактный телефон*:</span>
-              <input class="kontakt-form__field-control input" type="tel" name="kontakt-form-tel" placeholder="Введите телефон" required pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}">
+          <ul class="contakt-form__list">
+            <li class="contakt-form__item">
+            <label class="contakt-form__label">
+              <span class="label__span">Контактный телефон*:</span>
+              <input class="label__input" type="tel" name="contakt-form-tel" placeholder="Введите телефон" required pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}">
             </label>
-            <button class="kontakt-form__fieid-button" type="button">
-              <img src="../source/img/phone.svg" width="18" height="18" alt="">
+            <button class="contakt-form__button" type="button">
+              <img class="button__image" src="../source/img/phone.svg" width="18" height="18" alt="">
             </button>
             </li>
-            <li class="kontakt-form__item">
-            <label class="kontakt-form__field">
-              <span class="kontakt-form__field-label">Электронная почта*:</span>
-              <input class="kontakt-form__field-control input" type="email" name="kontakt-form-email" placeholder="Введите e-mail" required>
+            <li class="contakt-form__item">
+            <label class="contakt-form__label">
+              <span class="label__span">Электронная почта*:</span>
+              <input class="label__input" type="email" name="contakt-form-email" placeholder="Введите e-mail" required>
             </label>
-            <button class="kontakt-form__fieid-button" type="button">
-              <img src="../source/img/mail.svg" width="16" height="12" alt="">
+            <button class="contakt-form__button" type="button">
+              <img class="button__image" src="../source/img/mail.svg" width="16" height="12" alt="">
             </button>
             </li>
           </ul>
         </fieldset>
         <fieldset class="reviews-form__group">
           <legend class="reviews-form__title">ВАше Общее впечатление:</legend>
-          <ul class="control-container form-list__radio">
+          <ul class="reviews-form__radio">
             <li class="reviews-form__item">
-              <label class="control radio">
+              <label class="reviews-form__label">
                 <input class="visually-hidden control__input" type="radio" checked>
                 <span class="control-label">Скорее положительное</span>
               </label>
             </li>
             <li class="reviews-form__item">
-              <label class="control radio">
+              <label class="reviews-form__label">
                 <input class="visually-hidden control__input" type="radio">
                 <span class="control-label">Скорее отрицательное</span>
               </label>
             </li>
             <li class="reviews-form__item">
-              <label class="control radio">
+              <label class="reviews-form__label">
                 <input class="visually-hidden control__input" type="radio">
                 <span class="control-label">Затрудняюсь ответить</span>
               </label>
@@ -120,27 +120,27 @@
         </fieldset>
         <fieldset class="reviews-form__group">
           <legend class="reviews-form__title">посещенные достопримечательности:</legend>
-          <ul class="control-container form-list__checked">
+          <ul class="reviews-form__checked">
             <li class="reviews-form__item">
-              <label class="control checked">
+              <label class="reviews-form__label">
                 <input class="visually-hidden control__input" type="checkbox" checked>
                 <span class="control-label">Мост Дьявола</span>
               </label>
             </li>
             <li class="reviews-form__item">
-              <label class="control checked">
+              <label class="reviews-form__label">
                 <input class="visually-hidden control__input" type="checkbox" checked>
                 <span class="control-label">Гора-Колокол</span>
               </label>
             </li>
             <li class="reviews-form__item">
-              <label class="control checked">
+              <label class="reviews-form__label">
                 <input class="visually-hidden control__input" type="checkbox" checked>
                 <span class="control-label">Слайд-парк</span>
               </label>
             </li>
             <li class="reviews-form__item">
-              <label class="control checked">
+              <label class="reviews-form__label">
                 <input class="visually-hidden control__input" type="checkbox">
                 <span class="control-label">Красные скалы</span>
               </label>
