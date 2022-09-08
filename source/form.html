@@ -2,7 +2,9 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="main-header">
@@ -40,118 +42,118 @@
     </nav>
   </header>
   <main class="form-container">
-    <header class="form__header">
+    <header class="form-container__header">
       <h1 class="visually-hiden">Седона</h1>
-      <img src="../source/img/SEDONA.svg" alt="" style="background-image: url('images/back-desktop.jpg');">
+      <img src="../source/img/SEDONA.svg" alt="">
     </header>
-    <section class="custom-reviews">
-      <h2 class="custom-reviews__title">Оставьте свой отзыв</h2>
-      <p class="custom-reviews__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-      <form class="custom-reviews__form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="reviews-form__group">
-          <legend class="reviews-form__title">Представьтесь:</legend>
-          <ul class="reviews-form__list">
-            <li class="reviews-form__item">
-              <label class="reviews-form__field">
-                <span class="field-label__span">ИМЯ*:</span>
-                <input class="field-label__input" type="text" name="reviews-form-recipient-firstname" placeholder="Пётр">
+    <section class="reviews">
+      <h2 class="reviews__title">Оставьте свой отзыв</h2>
+      <p class="reviews__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <form class="reviews__form" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="form">
+          <legend class="form__title">Представьтесь:</legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="form__field">
+                <span class="form__field-span">ИМЯ*:</span>
+                <input class="form__field-input" type="text" name="reviews-form-recipient-firstname" placeholder="Пётр">
               </label>
             </li>
-            <li class="reviews-form__item">
-            <label class="reviews-form__field">
-              <span class="field-label__span">ФАМИЛИЯ*:</span>
-              <input class="field-label__input" type="text" name="reviews-form-recipient-lastname" placeholder="Пустота">
+            <li class="form__item">
+            <label class="form__field">
+              <span class="form__field-span">ФАМИЛИЯ*:</span>
+              <input class="form__field-input" type="text" name="reviews-form-recipient-lastname" placeholder="Пустота">
             </label>
             </li>
-            <li class="reviews-form__item">
-            <label class="reviews-form__field">
-              <span class="field-label__span">Отчество:</span>
-              <input class="field-label__input" type="text" name="reviews-form-recipient-name" placeholder="Викторович">
+            <li class="form__item">
+            <label class="form__field">
+              <span class="form__field-span">Отчество:</span>
+              <input class="form__field-input" type="text" name="reviews-form-recipient-name" placeholder="Викторович">
             </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="reviews-form__group">
-          <legend class="reviews-form__title">Контактная информация:</legend>
-          <ul class="contact-form__list">
-            <li class="contact-form__item">
-            <label class="contact-form__label">
-              <span class="visually-hidden control__input">Контактный телефон*:</span>
-              <input class="control__label" type="tel" name="contact-form-tel" placeholder="Введите телефон" required pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}">
+        <fieldset class="form">
+          <legend class="form__title">Контактная информация:</legend>
+          <ul class="form__list">
+            <li class="form__item">
+            <label class="form__field">
+              <span class="visually-hidden form__field-span">Контактный телефон*:</span>
+              <input class="form__field-input" type="tel" name="contact-form-tel" placeholder="Введите телефон" required pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}">
             </label>
-            <button class="contact-form__button" type="button">
-              <img class="button__image" src="../source/img/phone.svg" width="18" height="18" alt="">
+            <button class="form__button" type="button">
+              <img class="form__button-image" src="../source/img/phone.svg" width="18" height="18" alt="">
             </button>
             </li>
-            <li class="contact-form__item">
-            <label class="contact-form__label">
-              <span class="visually-hidden control__input">Электронная почта*:</span>
-              <input class="control__label" type="email" name="contact-form-email" placeholder="Введите e-mail" required>
+            <li class="form__item">
+            <label class="form__field">
+              <span class="visually-hidden form__field-span">Электронная почта*:</span>
+              <input class="form__field-input" type="email" name="contact-form-email" placeholder="Введите e-mail" required>
             </label>
-            <button class="contact-form__button" type="button">
-              <img class="button__image" src="../source/img/mail.svg" width="16" height="12" alt="">
+            <button class="form__button" type="button">
+              <img class="form__button-image" src="../source/img/mail.svg" width="16" height="12" alt="">
             </button>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="reviews-form__group">
-          <legend class="reviews-form__title">ВАше Общее впечатление:</legend>
-          <ul class="reviews-form__radio">
-            <li class="reviews-form__item">
-              <label class="reviews-form__label">
-                <input class="visually-hidden control__input" type="radio" checked>
-                <span class="control__label">Скорее положительное</span>
+        <fieldset class=" form">
+          <legend class="form__title">ВАше Общее впечатление:</legend>
+          <ul class="form__radio">
+            <li class="form__item">
+              <label class="form__field">
+                <input class="visually-hidden form__field-input" type="radio" checked>
+                <span class="form__field-span">Скорее положительное</span>
               </label>
             </li>
-            <li class="reviews-form__item">
-              <label class="reviews-form__label">
-                <input class="visually-hidden control__input" type="radio">
-                <span class="control__label">Скорее отрицательное</span>
+            <li class="form__item">
+              <label class="form__field">
+                <input class="visually-hidden form__field-input" type="radio">
+                <span class="form__field-span">Скорее отрицательное</span>
               </label>
             </li>
-            <li class="reviews-form__item">
-              <label class="reviews-form__label">
-                <input class="visually-hidden control__input" type="radio">
-                <span class="control__label">Затрудняюсь ответить</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="reviews-form__group">
-          <legend class="reviews-form__title">посещенные достопримечательности:</legend>
-          <ul class="reviews-form__checked">
-            <li class="reviews-form__item">
-              <label class="reviews-form__label">
-                <input class="visually-hidden control__input" type="checkbox" checked>
-                <span class="control__label">Мост Дьявола</span>
-              </label>
-            </li>
-            <li class="reviews-form__item">
-              <label class="reviews-form__label">
-                <input class="visually-hidden control__input" type="checkbox" checked>
-                <span class="control__label">Гора-Колокол</span>
-              </label>
-            </li>
-            <li class="reviews-form__item">
-              <label class="reviews-form__label">
-                <input class="visually-hidden control__input" type="checkbox" checked>
-                <span class="control-label">Слайд-парк</span>
-              </label>
-            </li>
-            <li class="reviews-form__item">
-              <label class="reviews-form__label">
-                <input class="visually-hidden control__input" type="checkbox">
-                <span class="control__label">Красные скалы</span>
+            <li class="form__item">
+              <label class="form__field">
+                <input class="visually-hidden form__field-input" type="radio">
+                <span class="form__field-span">Затрудняюсь ответить</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="reviews-form__group">
-          <label class="reviews-form__title" for="emotions">Опишите свои эмоции:</label>
-          <textarea class="reviews-form__area" id="emotions" name="emotions" rows="6" required>Опишите подробно все свои восторги</textarea>
+        <fieldset class="form">
+          <legend class="form__title">посещенные достопримечательности:</legend>
+          <ul class="form__checked">
+            <li class="form__item">
+              <label class="form__field">
+                <input class="visually-hidden form__field-input" type="checkbox" checked>
+                <span class="form__field-span">Мост Дьявола</span>
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="form__field">
+                <input class="visually-hidden form__field-input" type="checkbox" checked>
+                <span class="form__field-span">Гора-Колокол</span>
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="form__field">
+                <input class="visually-hidden form__field-input" type="checkbox" checked>
+                <span class="form__field-span">Слайд-парк</span>
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="form__field">
+                <input class="visually-hidden form__field-input" type="checkbox">
+                <span class="form__field-span">Красные скалы</span>
+              </label>
+            </li>
+          </ul>
         </fieldset>
-        <button class="reviews-form__button" type="button">ОТПРАВИТЬ ОТЗЫВ</button>
-        <p class="button__text">* — обязательные поля</p>
+        <fieldset class="form">
+          <label class="form__title" for="emotions">Опишите свои эмоции:</label>
+          <textarea class="form__area" id="emotions" name="emotions" rows="6" required>Опишите подробно все свои восторги</textarea>
+        </fieldset>
+        <button class="button button-form" type="button">ОТПРАВИТЬ ОТЗЫВ</button>
+        <p class="button-text">* — обязательные поля</p>
       </form>
     </section>
   </main>
@@ -162,17 +164,17 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <img class="social__link--vkontakte-image" src="../source/img/vk.svg" width="48" height="48" alt="">
+              <img class="social__image" src="../source/img/vk.svg" width="48" height="48" alt="">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <img class="social__link--youtube-image" src="../source/img/YouTube.svg" width="48" height="48" alt="">
+              <img class="social__image" src="../source/img/YouTube.svg" width="48" height="48" alt="">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-              <img class="social__link--telegram-image" src="../source/img/Telegram.svg" width="48" height="48" alt="">
+              <img class="social__image" src="../source/img/Telegram.svg" width="48" height="48" alt="">
             </a>
           </li>
         </ul>
@@ -187,4 +189,3 @@
   </footer>
 </body>
 </html>
-
