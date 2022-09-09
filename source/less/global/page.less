@@ -1,0 +1,70 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0 40px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  line-height: 26px;
+  font-family: "PT Sans", sans-serif;
+ }
+
+p {
+  margin: 0;
+ }
+
+ .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page {
+  height: 100%;
+  font-size: 14px;
+  font-family: "PT Sans", sans-serif;
+  line-height: 21px;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0 18px;
+}
+
+@media (min-width: @desktop-width) {
+  .page__body {
+  margin: 0 40px;
+}
+}
+
+@media (min-width: @tablet-width) {
+  .page__body {
+    margin: 0;
+  }
+}
+
