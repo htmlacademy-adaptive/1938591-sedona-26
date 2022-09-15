@@ -1,15 +1,15 @@
 body {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   min-height: 100%;
-  margin: 0 40px;
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
   color: #000000;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,13 +20,26 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   line-height: 26px;
   font-family: "PT Sans", sans-serif;
- }
+}
+
+a {
+  text-decoration: none;
+}
 
 p {
   margin: 0;
- }
+  padding: 0;
+}
 
- .visually-hidden {
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -53,18 +66,4 @@ img {
 
 .page__body {
   min-height: 100%;
-  margin: 0 18px;
 }
-
-@media (min-width: @desktop-width) {
-  .page__body {
-  margin: 0 40px;
-}
-}
-
-@media (min-width: @tablet-width) {
-  .page__body {
-    margin: 0;
-  }
-}
-

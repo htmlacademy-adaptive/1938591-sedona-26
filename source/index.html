@@ -8,10 +8,10 @@
 </head>
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="../source/img/logo.svg" width="185" height="96" alt="Логотип сайта Седона">
-    </a>
-    <nav class="main-navigation">
+    <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+      <a class="main-navigation__logo" href="index.html">
+        <img class="main-navigation__logo-image" src="../source/img/logo.svg" width="185" height="96" alt="Логотип сайта Седона">
+      </a>
       <button class="main-navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -61,18 +61,18 @@
           </li>
           <li class="advantages__item advantages__item--town">
             <img class="advantages__image" src="../source/img/icon-house.svg" width="39" height="37" alt="Домик">
-            <h3 class="advantages__title">Жилье</h3>
-            <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <h3 class="advantages__title advantages__title--town">Жилье</h3>
+            <p class="advantages__description advantages__description--town">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li class="advantages__item advantages__item--town">
             <img class="advantages__image" src="../source/img/icon-burger.svg" width="40" height="35" alt="Бургер">
-            <h3 class="advantages__title">Еда</h3>
-            <p class="advantages__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+            <h3 class="advantages__title advantages__title--town">Еда</h3>
+            <p class="advantages__description advantages__description--town">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
           </li>
-          <li class="advantages__item advantages__item--towngit">
+          <li class="advantages__item advantages__item--town">
             <img class="advantages__image" src="../source/img/icon-gift.svg" width="32" height="38" alt="Подарок">
-            <h3 class="advantages__title">СУВЕНИРЫ</h3>
-            <p class="advantages__description">Не только китайского, но и местного производства!</p>
+            <h3 class="advantages__title advantages__title--town">СУВЕНИРЫ</h3>
+            <p class="advantages__description advantages__description--town">Не только китайского, но и местного производства!</p>
           </li>
           <li class="advantages__item">
             <h3 class="advantages__title">ТАМ ЕСТЬ Мост дьявола</h3>
@@ -80,18 +80,18 @@
             <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             <img class="advantages__image-bridge" src="../source/img/photo-bridge1.jpg" width="520" height="260" alt="Красные скалы">
           </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+          <li class="advantages__item advantages__item--canyon">
+            <h3 class="advantages__title advantages__title--canyon">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
             <p class="advantages__number">— №3 —</p>
             <p class="advantages__description">ВСЕ интересные места находятся очень близко</p>
           </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">КРАСИВАЯ ДОРОГА</h3>
+          <li class="advantages__item advantages__item--canyon">
+            <h3 class="advantages__title advantages__title--canyon">КРАСИВАЯ ДОРОГА</h3>
             <p class="advantages__number">— №4 —</p>
             <p class="advantages__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
           </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">МАЛО ТУРИСТОВ</h3>
+          <li class="advantages__item advantages__item--canyon">
+            <h3 class="advantages__title advantages__title--canyon">МАЛО ТУРИСТОВ</h3>
             <p class="advantages__number">— №5 —</p>
             <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
           </li>
@@ -99,12 +99,16 @@
       </div>
     </section>
     <section class="subscription">
-      <div class="subscription__wrapper">
-        <h2 class="subscription__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-        <p class="subscription__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="subscription__button" type="button">Найти Гостиницу</button>
-        <img class="subscription__image-map" src="../source/img/map-mobile.jpg" width="320" height="350" alt="Карта местности, вид из космаса">
-      </div>
+      <h2 class="subscription__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+      <p class="subscription__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <button class="subscription__button" type="button">Найти Гостиницу</button>
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <img class="map__image" src="img/map-mobile.jpg" width="320" height="350" alt="Карта местности, вид из космаса"/>
+      <button class="map__button" type="button">
+        <img src="img/map-marker.svg" width="27" height="27" alt="Точка бело-голубого цвета в центре карты">
+      </button>
     </section>
   </main>
   <footer class="main-footer">
@@ -137,5 +141,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

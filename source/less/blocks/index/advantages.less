@@ -1,5 +1,6 @@
 .advantages__header {
   width: 282px;
+  margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
@@ -7,7 +8,10 @@
 
 .advantages__header-title {
   font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
   font-size: 18px;
+  line-height: 26px;
   margin-bottom: 35px;
 }
 
@@ -26,10 +30,99 @@
   margin: 0;
 }
 
+.advantages__item {
+  text-align: center;
+}
+
 .advantages__item:nth-child(4n+1) {
   background-color: #81B3D2;
   color: #ffffff;
 }
 
+.advantages__title {
+  padding-top: 39px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
 
+.advantages__number {
+  margin-bottom: 17px;
+  margin-top: 11px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.advantages__description {
+  padding-bottom: 40px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.advantages__item img {
+  display: block;
+  object-fit: contain;
+}
+
+.advantages__item--town {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  padding: 0;
+  margin: 0;
+}
+
+.advantages__image {
+  grid-column: 1/1;
+  padding-top: 25px;
+  margin: 0 auto;
+}
+
+.advantages__title--town,
+.advantages__description--town {
+  grid-column: 2/2;
+  text-align: left;
+  margin-left: 8px;
+  padding: 0;
+}
+
+.advantages__title--town:first-of-type {
+  margin-top: 30px;
+}
+
+.advantages__description--town {
+  color: #333333;
+}
+
+.advantages__item:nth-child(5) {
+  margin-top: 52px;
+}
+
+.advantages__item--canyon {
+  background-color: #EEEEEE;
+  position: relative;
+}
+
+.advantages__item--canyon:not(:nth-child(8)):after {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #D6D6D6;
+  order: 3;
+  content: "";
+}
+
+.advantages__title--canyon {
+  padding-top: 24px;
+}
 
