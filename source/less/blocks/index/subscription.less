@@ -1,6 +1,6 @@
 .subscription {
   margin: 0 auto;
-  padding-top: 38px;
+  padding: 38px 18px 49px 18px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -8,7 +8,7 @@
 }
 
 .subscription__title {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -31,11 +31,22 @@
 .subscription__button {
   min-width: 284px;
   margin: 0 auto;
-  margin-bottom: 49px;
   padding: 16px 49px;
-  background-color: #81B3D2;
+  background-color: #81b3d2;
   color: #ffffff;
   border: none;
+  text-transform: uppercase;
 }
 
+.subscription__button:hover {
+  background-color: #669ec0;
+}
 
+.subscription__button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.subscription__button:disabled {
+  background-color: #e5e5e5;
+}

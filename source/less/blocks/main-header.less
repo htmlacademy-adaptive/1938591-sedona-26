@@ -4,7 +4,7 @@
   justify-content: center;
   margin: 0 auto;
   width: 100%;
-
+  z-index: 1000;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -74,7 +74,7 @@
   cursor: pointer;
   background-color: transparent;
 
-@media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     display: none;
   }
 }
@@ -90,22 +90,22 @@
   left: 0;
   width: 23px;
   height: 4px;
-  background-color: #81B3D2;
-  box-shadow: 0 9px 0 0 #81B3D2, 0 18px 0 0 #81B3D2;
+  background-color: #81b3d2;
+  box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
 }
 
 .main-navigation--closed .main-navigation__toggle:active::before {
-  background-color: fade(#81B3D2, 30%);
+  background-color: fade(#81b3d2, 30%);
   box-shadow:
-    0 9px 0 0 fade(#81B3D2, 30%),
-    0 18px 0 0 fade(#81B3D2, 30%);
+    0 9px 0 0 fade(#81b3d2, 30%),
+    0 18px 0 0 fade(#81b3d2, 30%);
 }
 
 .main-navigation--closed .main-navigation__toggle:hover::before {
-  background-color: fade(#81B3D2, 60%);
+  background-color: fade(#81b3d2, 60%);
   box-shadow:
-    0 9px 0 0 fade(#81B3D2, 60%),
-    0 18px 0 0 fade(#81B3D2, 60%);
+    0 9px 0 0 fade(#81b3d2, 60%),
+    0 18px 0 0 fade(#81b3d2, 60%);
 }
 
 @media (max-width: @mobile-width-only) {
