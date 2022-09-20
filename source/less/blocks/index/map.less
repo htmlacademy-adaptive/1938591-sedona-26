@@ -1,11 +1,15 @@
 .map {
-  display: flex;
-  margin: auto;
+  width: 100%;
+  margin: 0 auto;
   position: relative;
+  text-align: center;
 }
 
 .map__image {
   display: block;
+  object-fit: cover;
+  height: 350px;
+  margin: 0 auto;
 }
 
 .map__button {
@@ -18,5 +22,13 @@
   padding: 0;
   left: 129px;
   top: 141px;
+
+  @media (min-width: @tablet-width) {
+    left: 370px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 626px;
+  }
 }
 
