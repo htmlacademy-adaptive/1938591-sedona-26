@@ -104,10 +104,20 @@
   padding-top: 33px;
 
   @media (min-width: @tablet-width) {
-    grid-column: 1/1;
     padding-left: 33px;
     padding-right: 32px;
-    width: auto;
+    width: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    padding: 47px 52px 56px 53px;
+  }
+}
+
+.advantages__item:nth-child(5) .card {
+  @media (min-width: @tablet-width) {
+    order: 2;
   }
 }
 
@@ -142,6 +152,11 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 15px;
+    padding-bottom: 23px;
+  }
 }
 
 .advantages__description {
@@ -151,15 +166,22 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    br {
+      display: block;
+    }
+  }
 }
 
 .advantages__item img {
   display: block;
   object-fit: fill;
-
-  @media (min-width: @tablet-width) {
-    grid-column: 2/-1;
-  }
+  width: 100%;
 }
 
 .advantages__item--town {
@@ -246,3 +268,4 @@
     }
   }
 }
+

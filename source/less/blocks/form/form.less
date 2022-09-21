@@ -3,12 +3,16 @@
   padding: 0;
   border: none;
 
-  @media (min-width: @tablet-width) {
-
+  &--name {
+    padding-bottom: 39px;
   }
 
-  @media (min-width: @desktop-width) {
-    position: relative;
+  &--contact {
+    padding-bottom: 34px;
+  }
+
+  &--checked {
+    padding-bottom: 34px;
   }
 }
 
@@ -19,13 +23,15 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  border-top: 1px solid #e5e5e5;
   padding-top: 24px;
+  border-top: 1px solid #e5e5e5;
 }
 
 .form__list {
   border: none;
-  padding: 24px 20px 25px 20px;
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
   width: 100%;
   margin: 0 auto;
 }
@@ -51,15 +57,14 @@
 }
 
 .form__item:not(:last-child) {
-  margin-bottom: 16px;
+  padding-bottom: 16px;
 }
 
 .form__button {
   width: 58px;
   height: 58px;
-  bottom: 0;
   right: 0;
-  background: #E6E6E6;
+  background: #e6e6e6;
   position: absolute;
 }
 
@@ -69,11 +74,11 @@
 
 .form__radio,
 .form__checked {
-  margin-top: 20px;
+  padding-top: 30px;
 }
 
 .form__item--control:not(:last-child) {
-  margin-bottom: 36px;
+  padding-bottom: 36px;
 }
 
 /* Control */
@@ -82,7 +87,16 @@
   display: flex;
   align-items: center;
   padding-left: 82px;
-  margin-bottom: 24px;
+  text-transform: none;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.control:not(:last-child) {
+  padding-bottom: 24px;
 }
 
 .control__input {
@@ -112,4 +126,42 @@
   top: 15px;
   background: #333333;
   border-radius: 50%;
+}
+
+.control__input[type="checkbox"]:checked + .control__mark::after {
+  content: "";
+  position: absolute;
+  background: url("../img/tick.svg") no-repeat center;
+  top: 15px;
+  left: 12px;
+  width: 22px;
+  height: 16px;
+}
+
+.form__area {
+  margin: 20px;
+  padding: 16px;
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #f2f2f2;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  width: 279px;
+  height: 150px;
+}
+
+.button-form {
+  margin: 0 20px;
+}
+
+.button-text {
+  color: rgba(51, 51, 51, 0.6);
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  text-align: end;
+  margin: 0 20px;
+  padding-top: 3px;
 }
