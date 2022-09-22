@@ -1,6 +1,29 @@
 .main-footer {
   padding: 39px 19px;
-  width: 282px;
+  max-width: 1240px;
+  width: 100%;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
+.main-footer__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    padding: 36px 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 51px 120px 51px 104px;
+  }
+}
+
+.header__footer {
+  text-align: center;
+}

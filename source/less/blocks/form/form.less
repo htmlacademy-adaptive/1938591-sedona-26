@@ -1,0 +1,167 @@
+.form {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  &--name {
+    padding-bottom: 39px;
+  }
+
+  &--contact {
+    padding-bottom: 34px;
+  }
+
+  &--checked {
+    padding-bottom: 34px;
+  }
+}
+
+.form__title {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  padding-top: 24px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.form__list {
+  border: none;
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form__field-span {
+  color: #333333;
+  padding-left: 14px;
+}
+
+.form__field-input {
+  width: 280px;
+  padding: 16px;
+  border: none;
+  background: #f2f2f2;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.form__item {
+  position: relative;
+}
+
+.form__item:not(:last-child) {
+  padding-bottom: 16px;
+}
+
+.form__button {
+  width: 58px;
+  height: 58px;
+  right: 0;
+  background: #e6e6e6;
+  position: absolute;
+}
+
+.form__field-input--contact {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.form__radio,
+.form__checked {
+  padding-top: 30px;
+}
+
+.form__item--control:not(:last-child) {
+  padding-bottom: 36px;
+}
+
+/* Control */
+.control {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 82px;
+  text-transform: none;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.control:not(:last-child) {
+  padding-bottom: 24px;
+}
+
+.control__input {
+  appearance: none;
+}
+
+.control__mark {
+  position: absolute;
+  left: 20px;
+  width: 46px;
+  height: 46px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.control__input[type="radio"] + .control__mark {
+  border-radius: 50%;
+}
+
+
+.control__input[type="radio"]:checked + .control__mark::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 15px;
+  top: 15px;
+  background: #333333;
+  border-radius: 50%;
+}
+
+.control__input[type="checkbox"]:checked + .control__mark::after {
+  content: "";
+  position: absolute;
+  background: url("../img/tick.svg") no-repeat center;
+  top: 15px;
+  left: 12px;
+  width: 22px;
+  height: 16px;
+}
+
+.form__area {
+  margin: 20px;
+  padding: 16px;
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #f2f2f2;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  width: 279px;
+  height: 150px;
+}
+
+.button-form {
+  margin: 0 20px;
+}
+
+.button-text {
+  color: rgba(51, 51, 51, 0.6);
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  text-align: end;
+  margin: 0 20px;
+  padding-top: 3px;
+}
