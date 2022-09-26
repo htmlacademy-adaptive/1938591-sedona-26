@@ -3,16 +3,106 @@
   padding: 0;
   border: none;
 
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
+
   &--name {
     padding-bottom: 39px;
+
+    @media (min-width: @tablet-width) {
+      position: relative;
+      padding: 0 43px 0 0;
+    }
+
+    @media (min-width: @tablet-width) {
+      padding-right: 63px;
+    }
   }
 
   &--contact {
     padding-bottom: 34px;
+
+    @media (min-width: @tablet-width) {
+      padding: 0;
+    }
   }
 
   &--checked {
     padding-bottom: 34px;
+
+    @media (min-width: @tablet-width) {
+      grid-column: 1/-1;
+      margin-top: 48px;
+      position: relative;
+    }
+  }
+
+  &--emotions {
+    @media (min-width: @tablet-width) {
+      grid-column: 1/-1;
+      margin-top: 48px;
+      position: relative;
+    }
+  }
+}
+
+.form--name .form__list {
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    border-right: 1px solid #dbdbdb;
+    padding-bottom: 15px;
+  }
+}
+
+.form--name .form__title {
+  @media (min-width: @tablet-width) {
+    border-right: 1px solid #dbdbdb;
+  }
+}
+
+.form--contact .form__list {
+  @media (min-width: @tablet-width) {
+    padding-left: 44px;
+  }
+
+  @media (min-width: @desctop-width) {
+    padding-left: 64px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form--checked .form__checked {
+    width: 480px;
+    padding: 30px 0 0 0;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+
+  .form__checked .form__item--control {
+    width: 224px;
+  }
+
+  .form--checked::after,
+  .form--emotions::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 123px;
+    top: -35%;
+    right: 0;
+    background-color: #dbdbdb;
+  }
+
+  .form--checked::before,
+  .form--emotions::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 123px;
+    left: 0;
+    top: -35%;
+    background-color: #dbdbdb;
   }
 }
 
@@ -25,6 +115,18 @@
   font-weight: 700;
   padding-top: 24px;
   border-top: 1px solid #e5e5e5;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-bottom: 38px;
+    border: none;
+  }
+}
+
+.form--checked .form__title {
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
 }
 
 .form__list {
@@ -34,11 +136,15 @@
   padding-right: 20px;
   width: 100%;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .form__field-span {
   color: #333333;
-  padding-left: 14px;
+  padding-left: 16px;
 }
 
 .form__field-input {
@@ -75,83 +181,56 @@
 .form__radio,
 .form__checked {
   padding-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
+
+.form__item--control {
+  width: 280px;
 }
 
 .form__item--control:not(:last-child) {
   padding-bottom: 36px;
 }
 
-/* Control */
-.control {
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding-left: 82px;
-  text-transform: none;
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-}
-
-.control:not(:last-child) {
-  padding-bottom: 24px;
-}
-
-.control__input {
-  appearance: none;
-}
-
-.control__mark {
-  position: absolute;
-  left: 20px;
-  width: 46px;
-  height: 46px;
-  border: none;
-  background-color: #f2f2f2;
-}
-
-.control__input[type="radio"] + .control__mark {
-  border-radius: 50%;
-}
-
-
-.control__input[type="radio"]:checked + .control__mark::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  left: 15px;
-  top: 15px;
-  background: #333333;
-  border-radius: 50%;
-}
-
-.control__input[type="checkbox"]:checked + .control__mark::after {
-  content: "";
-  position: absolute;
-  background: url("../img/tick.svg") no-repeat center;
-  top: 15px;
-  left: 12px;
-  width: 22px;
-  height: 16px;
-}
-
 .form__area {
-  margin: 20px;
+  margin: 20px 20px 56px 20px;
   padding: 16px;
   color: rgba(0, 0, 0, 0.3);
   background-color: #f2f2f2;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
-  width: 279px;
+  min-width: 279px;
+  width: 100%;
   height: 150px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 48px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 96px;
+    margin-right: 96px;
+  }
 }
 
 .button-form {
   margin: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 384px;
+  }
 }
 
 .button-text {
@@ -164,4 +243,8 @@
   text-align: end;
   margin: 0 20px;
   padding-top: 3px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }

@@ -1,0 +1,59 @@
+/* Control */
+.control {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-transform: none;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.control:not(:last-child) {
+  padding-bottom: 24px;
+}
+
+.control__input {
+  appearance: none;
+}
+
+.control__span {
+  padding-left: 62px;
+}
+
+.control__mark {
+  position: absolute;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.control__input[type="radio"] + .control__mark {
+  border-radius: 50%;
+}
+
+
+.control__input[type="radio"]:checked + .control__mark::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 15px;
+  top: 15px;
+  background: #333333;
+  border-radius: 50%;
+}
+
+.control__input[type="checkbox"]:checked + .control__mark::after {
+  content: "";
+  position: absolute;
+  background: url("../img/tick.svg") no-repeat center;
+  top: 15px;
+  left: 12px;
+  width: 22px;
+  height: 16px;
+}

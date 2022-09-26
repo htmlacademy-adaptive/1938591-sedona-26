@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="../32.svg" type="image/svg+xml">
 </head>
 <body class="page__body">
   <header class="main-header">
@@ -154,12 +156,12 @@
               <label class="control">
                 <input class="control__input" type="checkbox">
                 <span class="control__mark"></span>
-                <span class="conrtol__span">Красные скалы</span>
+                <span class="control__span">Красные скалы</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form">
+        <fieldset class="form form--emotions">
           <legend class="form__title" for="emotions">Опишите свои эмоции:</legend>
           <textarea class="form__area" id="emotions" name="emotions" rows="6" required>Опишите подробно все свои восторги</textarea>
         </fieldset>
@@ -217,5 +219,23 @@
     </div>
   </footer>
   <script src="js/script.js"></script>
+  <div class="modal-container modal-container--open">
+    <div class="modal modal-auth modal-auth--one">
+      <section class="modal-content">
+        <h2 class="modal-content__title">ЧТО-ТО ПОШЛО<br> НЕ ТАК!</h2>
+        <p class="modal-content__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      </section>
+      <button class="modal-content__button button">ОК</button>
+    </div>
+  </div>
+  <div class="modal-container modal-container--close">
+    <div class="modal modal-auth modal-auth--two">
+      <section class="modal-content">
+        <h2 class="modal-content__title">Ваш отзыв отправлен!</h2>
+        <p class="modal-content__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+      </section>
+      <button class="modal-content__button button">ЗАКРЫТЬ ОКНО</button>
+    </div>
+  </div>
 </body>
 </html>
