@@ -13,6 +13,14 @@
 
 .control:not(:last-child) {
   padding-bottom: 24px;
+
+  @media (min-width: tablet-width) {
+    padding-bottom: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .control__input {
@@ -20,7 +28,7 @@
 }
 
 .control__span {
-  padding-left: 62px;
+  padding-left: 60px;
 }
 
 .control__mark {
@@ -30,6 +38,8 @@
   height: 46px;
   border: none;
   background-color: #f2f2f2;
+  color: #333333;
+  border-radius: 4px;
 }
 
 .control__input[type="radio"] + .control__mark {
@@ -37,23 +47,35 @@
 }
 
 
-.control__input[type="radio"]:checked + .control__mark::before {
-  content: "";
+.control__input[type="radio"] + .control__mark svg {
   position: absolute;
   width: 16px;
   height: 16px;
   left: 15px;
   top: 15px;
-  background: #333333;
-  border-radius: 50%;
 }
 
-.control__input[type="checkbox"]:checked + .control__mark::after {
-  content: "";
+.control__input[type="checkbox"] + .control__mark svg {
   position: absolute;
-  background: url("../img/tick.svg") no-repeat center;
-  top: 15px;
-  left: 12px;
   width: 22px;
   height: 16px;
+  top: 15px;
+  left: 12px;
+}
+
+.control__input + .control__mark svg {
+  display: none;
+}
+
+.control__input:checked + .control__mark svg {
+  display: block;
+}
+
+.control__input + .control__mark:hover {
+  background: #e5e5e5;
+}
+
+.control__input + .control__mark:active {
+  background: #d5d5d5;
+  color: rgba(51, 51, 51, 0.3);
 }
